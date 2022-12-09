@@ -15,7 +15,7 @@ int main(void)
 	}else if(n==0){
 	printf("n is zero\n");
 	}else {
-	printf("n is negetive\n")
+	printf("n is negetive\n");
 	}
 	return (0);
 }
