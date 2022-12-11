@@ -9,6 +9,6 @@ int main(void)
 	int i;
 
 	for (i = 0 ; i < 10 ; i++)
-		putchar(i,", ");
-	Return (0);
+		putchar(i", ");
+	return (0);
 }
