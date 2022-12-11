@@ -10,15 +10,15 @@ int main(void)
 
 	for (i = 0 ; i < 10 ; i++)
 	{
-		purchar((i % 10) + '0');
+		putchar((i % 10) + '0');
 		if (i == 9)
 			continue;
 		
-		purchar(',');
-		purchar(' ');
+		putchar(',');
+		putchar(' ');
 	}
 
-	purchar('\n');
+	putchar('\n');
 	
 	return (0);
 }
