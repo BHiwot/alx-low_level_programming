@@ -1,4 +1,4 @@
-i#include<stdio.h>
+#include<stdio.h>
 /**
  * main - Print all possibel different combination of two digit number
  *
