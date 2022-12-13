@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _abs - beginning
- * @i single parameter
+ * @i: single number input
  * Return:  Absolute value of a number
  */
 
