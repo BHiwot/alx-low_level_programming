@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * _abs - beginning
- * 
- * Return:  0
+ * @i single parameter
+ * Return:  Absolute value of a number
  */
 
 int _abs(int i)
