@@ -3,7 +3,7 @@
 /**
  * _islower - beginning
  * @c: single letter input
- * Return: 1 if c is a letter lowercase or uppercase otherwise return 0
+ * Return: 1 if c is a letter lowercase otherwise return 0
  */
 
 int _islower(int c)
