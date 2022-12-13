@@ -2,7 +2,8 @@
 /**
  * time_table - beginning
  * hr = hour mn minutes
- * Return: 24 hour line by line
+ * Return: time table
+ * add space
  */
 
 void times_table(void)
