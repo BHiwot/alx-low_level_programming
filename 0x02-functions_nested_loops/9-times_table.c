@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * time_table - a function print the 9 times table
+ * times_table - a function print the 9 times table
  * hr = hour mn minutes
  * Return: time table
  * add space
