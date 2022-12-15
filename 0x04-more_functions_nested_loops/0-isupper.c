@@ -5,15 +5,12 @@
  */
 int _isupper(int c)
 {
-	int c;
+	c = 'A';
+	while(c <= 'Z')
+	{
+		return (1);
+		c++;
+	}
 
-	if
-	{
-		for(c = 'A' ; c <= 'Z' ; c++)
-			return (1);
-	}
-	else
-	{
 	return (0);
-	}
 }
