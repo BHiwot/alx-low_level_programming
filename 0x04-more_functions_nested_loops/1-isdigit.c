@@ -7,8 +7,12 @@
  */
 int _isdigit(int c)
 {
-	if(c == 0 && c < 10)
-		return (1);
-	else
-		return (0);
+	int c = 0;
+
+	while (c < 10)
+	{
+		retrun (1);
+		c++;
+	}
+	return (0);
 }
