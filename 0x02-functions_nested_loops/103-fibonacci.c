@@ -17,7 +17,7 @@ int main(void)
 		if (c % 2 == 0 && c < 4000000)
 		{
 			sums += c;
-		}	
+		}
 	}
 	printf("%lu\n", sums);
 	return (0);
