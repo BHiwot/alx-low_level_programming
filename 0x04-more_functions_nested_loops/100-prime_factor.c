@@ -2,7 +2,6 @@
 
 /**
  * main - Print prime number
- * 
  * Return: 0
  */
 
