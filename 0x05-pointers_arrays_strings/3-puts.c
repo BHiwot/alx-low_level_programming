@@ -10,5 +10,5 @@ void _puts(char *str)
 {
 	if (*str == '\0')
 		return;
-	putchar("%c", *str);
+	printf("%c\n", *str);
 }
