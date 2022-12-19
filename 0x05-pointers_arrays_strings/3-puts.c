@@ -8,7 +8,7 @@
  */
 void _puts(char *str)
 {
-	while (*str
-		printf("%s", char *str);
-	++*str;
+	if (*str == '\0')
+		return ;
+	printf("%s", *str);
 }
