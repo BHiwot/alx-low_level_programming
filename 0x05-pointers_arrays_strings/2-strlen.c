@@ -9,5 +9,7 @@
  */
 int _strlen(char *s)
 {
-	strlen(s);
+	int ln;
+
+	ln = strlen(s);
 }
