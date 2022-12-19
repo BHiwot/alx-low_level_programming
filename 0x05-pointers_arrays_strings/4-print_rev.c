@@ -6,7 +6,7 @@
  * @s: pointer parameter
  * Return: 0
  */
-void print n = strlint_rev(char *s)
+void print_rev(char *s)
 {
 	int g, numb;
 	int tmpry = 0;
