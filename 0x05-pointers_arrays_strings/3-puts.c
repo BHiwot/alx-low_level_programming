@@ -9,6 +9,6 @@
 void _puts(char *str)
 {
 	if (*str == '\0')
-		return ;
+		return;
 	printf("%s", char *str);
 }
