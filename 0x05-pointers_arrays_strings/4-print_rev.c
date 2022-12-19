@@ -8,5 +8,6 @@
  */
 void print_rev(char *s)
 {
-	strrev(s);
+	ln = puts(s);
+	strrev(ln);
 }
