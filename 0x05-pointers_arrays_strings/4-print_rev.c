@@ -4,21 +4,20 @@
 /**
  * print_rev - print string in reverse
  * @s: pointer parameter
- * Return: 0
+ * Return: Reverse String
  */
 void print_rev(char *s)
 {
-	int g, numb;
-	int tmpry = 0;
+	int x = 0;
+	int i, n;
 
-	for(numb=0; s[numb] != 0; numb++);
-	for(g = 0; g <numb/2; g++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		tmpry = s[g];
-		s[g]=s[numb - 1 - g];
-		s[numb - 1 - g] = tmpry;
+		 x++;
 	}
-	for(g = 0; g < numb; g++)
-		putchar(s[g]);
-	printf(" \n ");
+	for (n = (x - 1); n >= 0; n--)
+	{
+		_putchar(s[n]);
+	}
+	_putchar('\n');
 }
