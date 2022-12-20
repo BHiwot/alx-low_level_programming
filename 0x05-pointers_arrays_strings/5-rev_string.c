@@ -2,7 +2,7 @@
 /**
  * rev_string - function that reverse astring
  * @s: pointer parameter
- * Return: 0
+ * Return: reverse string
  */
 void rev_string(char *s)
 {
@@ -12,6 +12,7 @@ void rev_string(char *s)
 
 	while (s[c] != '\0')
 		x++;
+
 	for (x = 0; x < c; x++)
 	{
 		c--;
