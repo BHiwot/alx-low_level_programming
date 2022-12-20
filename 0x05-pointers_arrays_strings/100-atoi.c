@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int i = 0;
+	int i;
 	int n = 0;
 	int c = 1;
 
@@ -29,6 +29,6 @@ int _atoi(char *s)
 			i++;
 		}
 	}
-	
+	c *= -1;
 	return (n * c);
 }
