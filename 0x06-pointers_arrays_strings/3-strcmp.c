@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - function concatenates two string
+ * _strcmp - function compare string
  * @s1: first input
  * @s2: second input
  * Return: 0
