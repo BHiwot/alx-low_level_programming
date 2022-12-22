@@ -7,6 +7,8 @@
  */
 void reverse_array(int *a, int n)
 {
+	int start, end;
+
 	for (int start = 0, end = n - 1 ; start < end; start++, end++)
 	{
 		int temp = a[start];
