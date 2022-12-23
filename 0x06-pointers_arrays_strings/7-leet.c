@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - function that ecnode astring in to 1337
+ * leet - function that ecnode astring in to 1337
  * @s: input string
  * Return: 0
  */
