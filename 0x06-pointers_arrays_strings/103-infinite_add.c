@@ -1,26 +1,45 @@
 #include "main.h"
 /**
- * rot13 - function that ecnode astring usingrot13
- * @s: input string
- * Return: 0
+ * infinite_add - adds two numbers
+ * @n1: input
+ * @n2: input
+ * @r: input
+ * @size_r: int input
+ * Return: char
  */
-char *rot13(char *s)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int a = 0;
+	int i, j, k, l, m, n;
 
-	while (s[a])
+	for (i = 0; n1[i]; i++)
+		;
+	for (j = 0; n2[j]; j++)
+		;
+	if (i > size_r || j > size_r)
+		return (0);
+	m = 0;
+	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
 	{
-		while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
+		n = m;
+		if (i >= 0)
+			n += n1[i] - '0';
+		if (j >= 0)
+			n += n2[j] - '0';
+		if (i < 0 && j < 0 && n == 0)
 		{
-			if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
-			{
-				s[a] -= 13;
-				break;
-			}
-			s[a] += 13;
 			break;
 		}
-		a++;
+		m = n / 10;
+		r[k] = n % 10 + '0';
 	}
-	return (s);
+	r[k] = '\0';
+	if (i >= 0 || j >= 0 || m)
+		return (0);
+	for (k -= 1, l = 0; l < k; k--, l++)
+	{
+		m = r[k];
+		r[k] = r[l];
+		r[l] = m;
+	}
+	return (r);
 }
