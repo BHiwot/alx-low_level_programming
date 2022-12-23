@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * cap_string - function capitalizes all word
- * @n: input string
+ * @s: input string
  * Return: n
  */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
 	int a = 0, i;
 	int cs = 13;
