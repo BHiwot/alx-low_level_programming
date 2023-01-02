@@ -5,7 +5,7 @@
  * @c: character
  * Return: pointer or 0
  */
-char *_strchr(char *s, char c)
+char *_strchr(const char *s, char c)
 {
 	while (*s != '\0')
 	{
@@ -16,5 +16,4 @@ char *_strchr(char *s, char c)
 		s++;
 	}
 	return (NULL);
-
 }
