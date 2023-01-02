@@ -3,15 +3,14 @@
  * *_memset -  function fill memory
  * @s: pointer
  * @b: constant byte
- * @n: 
+ * @n: bytes
  * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned char* p=s;
-	while(n--)
-	{
-		*p++ = (unsigned char)b;
-	}
-	return s;
+	unsigned int a;
+
+	for (a = 0; a < n; a++)
+		s[a] = b;
+	return (s);
 }
