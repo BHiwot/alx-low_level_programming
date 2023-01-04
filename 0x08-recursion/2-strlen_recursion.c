@@ -4,11 +4,11 @@
  * @s: input
  * Return: return length of string
  */
-void _print_rev_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
 	{
 		_strlen_recursion(s + 1);
-		_putchar(*s);
+		return (s);
 	}
 }
