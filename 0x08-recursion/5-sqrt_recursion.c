@@ -1,18 +1,18 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * sqrt - function
+ * _sqrt - function
  * @i: same number as n
  * @j: iterate from 1 to n
  * Return:  1
  */
-int sqrt(int i, int j)
+int _sqrt(int i, int j)
 {
 	if (j * j == i)
 		return (j);
 	else if (j * j > i)
 		return (-1);
-	return (sqrt(i, j + 1));
+	return (_sqrt(i, j + 1));
 }
 /**
  * _sqrt_recursion - return square root
@@ -21,5 +21,5 @@ int sqrt(int i, int j)
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (_sqrt(n, 1));
 }
