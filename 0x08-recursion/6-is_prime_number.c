@@ -15,11 +15,11 @@ int _prime(int i, int j)
 	return (_prime(i, j + 1));
 }
 /**
- * _sqrt_recursion - return square root
+ * is_prime_number - return square root
  * @n: input
  * Return: if n have no naturnal suare -1
  */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
