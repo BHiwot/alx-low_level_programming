@@ -3,49 +3,35 @@
 #include <string.h>
 #include "main.h"
 /**
- * num_checker - checks if a given char is number or not
- * @a: char to be checked
- * Return: 1, if its a number, else 0
- */
-int num_checker(char *a)
-{
-	int i, num, len;
-
-	i = 0;
-	num = 0;
-	len = strlen(a);
-	while (i < len)
-	{
-		if (a[i] < '0' || a[i] > '9')
-		{
-			return (-1);
-		}
-		else
-			num = num * 10 + (a[i] - '0');
-		i++;
-	}
-	return (num);
-}
-/**
- * main - Entry point
- * @argc: arguments
- * @argv: array pointing to arguments
- * Return: 0
+ * main - program that multiplies two numbers
+ * @argc: argument count for main
+ * @argv: vector to the arguments
+ *  Return: void
  */
 int main(int argc, char *argv[])
 {
-	int i, num, sum;
+	int i, j;
+	int sum = 0;
 
-	sum = 0;
-	for (i = 1; i < argc; i++)
+	if (argc <= 1)
 	{
-		num = num_checker(argv[i]);
-		if (num === -1)
+		printf("0\n");
+		return (0);
+	}
+	else if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			for (j = 0; argv[i][j] != '\0'; j++)
+			{
+				if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			sum += atoi(argv[i]);
 		}
-		sum += num;
 	}
 	printf("%d\n", sum);
 	return (0);
