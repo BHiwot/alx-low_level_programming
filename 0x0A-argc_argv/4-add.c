@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * num_checker - checks if a given char is number or not
  * @a: char to be checked
