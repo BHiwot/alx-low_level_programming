@@ -7,9 +7,9 @@
  * @argv: vector to the arguments
  * Return: void
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	if (argc >= 1)
-		printf("%s\n", argv[0]);
+	argc = argc;
+		printf("%s\n", *argv);
 	return (0);
 }
