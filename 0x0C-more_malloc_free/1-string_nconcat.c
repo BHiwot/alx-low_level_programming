@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * *string_nconcat - fun concat 2 string
  * @s1: des input
