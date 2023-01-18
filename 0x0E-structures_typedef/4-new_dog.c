@@ -59,7 +59,7 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * _strcpy: ..
+ * _strcpy - ..
  *  @x: pointer to destination of string
  *  @y: ..
  *  Return: pointer to dest
