@@ -20,6 +20,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator ? separator : "");
 		printf("%s", num ? num : "(nil)");
 	}
-	va_end(args);
+	va_end(vl);
 	printf("\n");
 }
