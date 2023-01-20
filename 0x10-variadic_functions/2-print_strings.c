@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *num;
 
 	va_start(vl, n);
-	for (i = 1; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		num = va_arg(vl, char *);
 		if (num == NULL)
