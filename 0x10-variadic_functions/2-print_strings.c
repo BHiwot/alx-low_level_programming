@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		num = va_arg(vl, char *);
 		if (num == 0)
 		{
-			printf("%s", "(nil)");
+			printf("(nil)");
 		}
 		if (i == n - 1)
 		{
@@ -37,6 +37,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 	}
 	va_end(vl);
-	}
 	printf("\n");
 }
