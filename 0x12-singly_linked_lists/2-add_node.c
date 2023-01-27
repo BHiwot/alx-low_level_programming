@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * add_nodeint - add new nodes to the list
+ * add_node - add new nodes to the list
  * @head: current place in the list
  * @str: int to add to the list
  * Return: pointer to current position in list
