@@ -6,20 +6,21 @@
 /**
  * add_nodeint - add new nodes to the list
  * @head: current place in the list
- * @n: int to add to the list
+ * @str: int to add to the list
  * Return: pointer to current position in list
-  */
-
-listint_t *add_nodeint(listint_t **head, const int n)
+ */
+list_t *add_node(list_t **head, const char *str)
 {
-	listint_t *new;
+	list_t *new_head;
 
-	new = *head;
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
+	if (!(head))
 		return (NULL);
-	new->n = n;
-	new->next = *head;
-	*head = new;
-	return (*head);
+	new_head = malloc(sizeof(list_t));
+	if (new_head == NULL)
+		return (NULL);
+	if (str)
+		new_head->str = strdup(str);
+	new_head->next = *head;
+	*head = new_head;
+	return (new_head);
 }
