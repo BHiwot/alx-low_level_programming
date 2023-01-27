@@ -1,7 +1,6 @@
-#include "lists.h" 
+#include "lists.h"
 #include <stdio.h>
 #include <string.h>
-
 /**
  * add_node - add new nodes to the list
  * @head: current place in the list
