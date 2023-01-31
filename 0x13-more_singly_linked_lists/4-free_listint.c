@@ -6,7 +6,7 @@
 /**
  * free_listint - function that free list
  * @head: A pointer to the address of head of the listint_t list.
- * Return: 
+ * Return: ....
  */
 
 void free_listint(listint_t *head)
