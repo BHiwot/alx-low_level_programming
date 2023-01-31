@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int _strlen(char *str);
 
 /**
  * struct listint_s - singly linked list
