@@ -13,9 +13,9 @@ size_t print_listint_safe(const listint_t *head)
 		exit(98);
 	while (aux_node)
 	{
-	printf("[%p] %i\n", (void *)aux_node, aux_node->n);
-	aux_node = aux_node->next;
-	pichu++;
+		printf("[%p] %i\n", (void *)aux_node, aux_node->n);
+		aux_node = aux_node->next;
+		pichu++;
 	}
 	return (pichu);
 }
